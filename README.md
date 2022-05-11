@@ -1,6 +1,6 @@
 # User Feedback App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It id a project where a user can rate their experience with your service. It is a demo project for learning purposes.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is a project where a user can rate and review their experience with a client services. It is a demo project.
 
 ## Available Scripts
 
