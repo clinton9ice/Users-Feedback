@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, .btn{
+    box-shadow: none !important;
+}
+
+:root{
+    --bg-color: #451343;
+    --purple: #241136;
+    --purple-100: #451343;
+    --purple-200: #571a56;
+    --purple-300: #7b287d;
+    --blue: #7067cf;
+    --blue-light: #b7c0ee;
+    --white: #fff;
+}
+
+body{
+    background-color: var(--purple);
+    font-family: "system-ui", sans;
+}
+
+.header{
+      background-color: #190b26;
+      color: var(--white);
+      /* text-align: center; */
+      margin: 0 auto 1rem;
+      padding: 0.87rem;
+      max-width: 1500px;
+      font-size: 1.5em;
+}
+.feedback-item .card-body{
+    padding-top: 1.5rem;
+    font-size: 1.2em;
+}
+
+.feedback-item .badge{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        padding: 0;
+        border-radius: 50%;
+        position: absolute;
+        top: -10px;
+        left: -11px;
+}
+
+
+/* ========= Rating====== */
+.rating-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    
+}
+.rating-container .rating-buttons{
+    list-style: none;
+    position: relative;
+    margin: 0.7rem 2px;
+}
+
+.rating-container .rating-buttons input[type='radio']{
+  position: absolute;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    border: 0;
+    overflow: hidden;
+}
+
+.rating-container  label{
+     width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--bs-gray-300);
+    color: var(--bs-gray-600);
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.form-radio:checked + label {
+background: var(--bs-blue);
+color: #fff;
+border-color: var(--bs-blue)
+}
